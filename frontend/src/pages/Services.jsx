@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
-
+import Banner from "../components/Banner"
 const servicesData = [
   {
     id: 1,
@@ -111,6 +111,7 @@ const servicesData = [
 
 const Services = () => {
   return (
+    <>
     <section className="services px-2 md:px-10 lg:px-20 md:py-20 py-10">
       <div className="container mx-auto px-4 lg:px-10">
         <div className="text-center">
@@ -141,6 +142,8 @@ const Services = () => {
         </div>
       </div>
     </section>
+    <Banner/>
+    </>
   );
 };
 
