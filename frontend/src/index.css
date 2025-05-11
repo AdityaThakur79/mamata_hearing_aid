@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Outfit;
+}
+
+.active hr {
+    @apply block
+}
+
+@media (max-width:740px) {
+    .active  p{
+       @apply text-white bg-[#043152]
+    }
+}
+
+::-webkit-scrollbar {
+    @apply hidden
+}
+
+section{
+  padding:40px 0 ;
+}
+/* feature  */
+.Feautes {
+  padding-top: 0;
+}
+
+.Feautes.index2,
+.Feautes.testimonial-page {
+  padding-top: 100px;
+}
+
+.single-features {
+  padding: 10px 20px;
+}
+
+ @media(min-width:992px) {
+  .single-features::before {
+  content: "";
+  position: absolute;
+  right: -72px;
+  top: 60px;
+  width: 118px;
+  border-bottom: 3px dotted #043152;
+}
+ }
+
+.single-features.last::before {
+  display: none;
+}
+
+.signle-icon i {
+  font-size: 50px;
+  color: #1a76d1;
+  height: 100px;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  border-radius: 100%;
+  transition: all 0.4s ease;
+}
+
+.single-features:hover .signle-icon i {
+  background: #043152;
+  color: #fff;
+  border-color: transparent;
+}
+
+
+/* Why choose us */
+.why-choose-us-icon {
+  color: #5AA89B;
+
+}
+
+.whyChooseUs {
+  background-color: #043152;
+  opacity: 1;
+}
+
+.whyChooseUs-para {
+  color: white;
+  font-weight: 700;
+}
+
+.whyChooseUs span {
+  color: #5AA89B;
+}
+
+.whyChooseUsHover {
+  background-color: #5AA89B;
+}
+
+.why-choose-us-icon {
+  transition: all 1s;
+}
+
+.whyChooseUsCard:hover .why-choose-us-icon {
+  color: white;
+}
+
+/* Services */
+
+section.services .container .service-para {
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+section.services .container .service-para span {
+  color: #043152;
+}
+
+section.services .container .right-service-heading {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+@media (min-width:767px) {
+  section.services .container .right-service-heading {
+    font-size: 32px;
+    font-weight: 500;
+  }
+}
+
+section.services .container .right-service-heading span {
+  color: #043152;
+}
+
+section.services .container .service-cards {
+  margin-top: 20px;
+}
+
+@media (min-width: 1024px) {
+  section.services .container .service-cards {
+    margin-top: 60px;
+  }
+}
+
+section.services .container .service-cards figure {
+  height: 260px;
+}
+
+section.services .container .service-cards figure img {
+  border-radius: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+
+.hover\:shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover\:shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent 0%, rgba(255, 255, 255, 0.4) 100%);
+  transform: skewX(-8deg) translateX(-180%);
+  transition: transform 0.8s ease-in-out;
+}
+
+.hover\:shine:hover::after {
+  transform: skewX(-8deg) translateX(275%);
+}
+
+/* Testimonial */
+
+/* Testimonials */
+.testimonial {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(222, 222, 222);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+.splide-track {
+  padding: 20px 0;
+}
+
+.testimonial-card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 14px;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color:   #043152;
+}
+
+.testimonial-card:hover .testimonial-star {
+  color: white
+}
+
+.testimonial-card:hover .testimonial-quotes {
+  background-color: white;
+  color: #043152
+}
+
+.testimonial-card:hover p {
+  color: white !important;
+}
+
+.testimonial-card:hover h4 {
+  color: white !important;
+}
+
+.testimonial h5 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #043152;
+}
+
+.testimonial h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}
+
+@media (min-width:767px) {
+  .testimonial h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: black;
+  }
+
+  .testimonial h5 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #043152;
+  }
+}
+
+.testimonial-quotes {
+  background-color: #043152;
+  border-radius: 50%;
+  color: white;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.testimonial-star {
+  color: #043152;
+  font-size: 24px;
+}
+
+.testimonial-name {
+  border-top: 1px solid rgb(226, 226, 226);
+  padding: 10px 0 0 0;
+}
+
+
+/* CTA */
+.floating-btn {
+  background-color: #002552;
+  border-radius: 50%;
+  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  aspect-ratio: 1/1;
+  width: 50px;
+  height: 50px;
+  padding: 14px;
+}
+
+@media (min-width: 480px) {
+  .floating-btn {
+    width: 35px;
+    height: 35px;
+    padding: 10px;
+
+  }
+}
+
+.floating-buttons-wrapper {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 100000;
+}
+
+@media (min-width: 768px) {
+  .floating-buttons-wrapper {
+    right: 20px;
+    bottom: 20px;
+    gap: 15px;
+  }
+}
+
+.floating-buttons-wrapper .floating-btn {
+  background-color: #043152;
+  border-radius: 50%;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  aspect-ratio: 1/1;
+  width: 35px;
+  height: 35px;
+  padding: 10px;
+}
+
+@media (min-width: 576px) {
+  .floating-buttons-wrapper .floating-btn {
+    width: 50px;
+    height: 50px;
+    padding: 14px;
+  }
+}
+
+.floating-buttons-wrapper .floating-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.floating-buttons-wrapper .floating-btn span svg {
+  height: 100%;
+  width: 100%;
+  stroke: #fff;
+}
+
+.floating-buttons-wrapper .floating-btn._whatsapp {
+  background-color: #5AA89B;
+  padding: 8px;
+}
+
+@media (min-width: 576px) {
+  .floating-buttons-wrapper .floating-btn._whatsapp {
+    padding: 12px;
+  }
+}
+
+@keyframes green-wave {
+  0% {
+    box-shadow: 0 0 0 0 rgba(99, 192, 133, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+}
+
+.green-wave {
+  animation: green-wave 1s linear infinite;
+}
+
+@keyframes phone-wave {
+  0% {
+    box-shadow: 0 0 0 0 #969ed4;
+  }
+
+  100% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+}
+
+.phone-wave {
+  animation: phone-wave 1s linear infinite;
+}
