@@ -15,6 +15,21 @@ const port = process.env.PORT || 4000
 connectDB()
 connectCloudinary()
 
+// middlewares
+app.use(express.json())
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+    credentials: true,
+  })
+);
+
+// api endpoints
+app.use("/api/user", userRouter)
+app.use("/api/admin", adminRouter)
+app.use("/api/doctor", doctorRouter)
+
+
 //Static file
 // Get the current file path
 const __filename = fileURLToPath(import.meta.url);
@@ -29,14 +44,6 @@ app.use(express.static(path.join(__dirname, "./frontend/dist")));
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./frontend/dist/index.html"));
 });
-// middlewares
-app.use(express.json())
-app.use(cors())
-
-// api endpoints
-app.use("/api/user", userRouter)
-app.use("/api/admin", adminRouter)
-app.use("/api/doctor", doctorRouter)
 
 app.get("/", (req, res) => {
   res.send("API Working")
