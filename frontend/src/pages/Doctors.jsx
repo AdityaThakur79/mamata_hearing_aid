@@ -26,7 +26,7 @@ const Doctors = () => {
 
   return (
     <section className='px-4 sm:px-10 md:px-14 lg:px-12 md:mx-10'>
-      <p className='text-gray-600'>Browse through the doctors specialist.</p>
+      <p className='text-gray-600'>Book an appointment now</p>
       <div className='flex flex-col sm:flex-row items-start gap-5 mt-5'>
         {/* <button onClick={() => setShowFilter(!showFilter)} className={`py-1 px-3 border rounded text-sm  transition-all sm:hidden ${showFilter ? 'bg-[#043152] hover:bg-[#5AA89B] text-white' : ''}`}>Filters</button> */}
         {/* <div className={`flex-col gap-4 text-sm text-gray-600 ${showFilter ? 'flex' : 'hidden sm:flex'}`}>

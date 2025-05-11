@@ -14,10 +14,11 @@ const TopDoctors = () => {
 
       <div className="relative z-10 flex flex-col items-center text-center">
         <h5 className="text-lg text-[#5AA89B] font-semibold">
-          Top Doctors to Book
+          Book an appointment
         </h5>
         <h2 className="text-2xl md:text-3xl font-bold text-[#043152] mt-2 max-w-xl">
-          Simply browse through our trusted specialist and book with ease.
+          Get the care you need at Mamata Hearing Aid and Speech Clinic — book
+          your appointment with ease.
         </h2>
 
         {/* Doctor Card */}
