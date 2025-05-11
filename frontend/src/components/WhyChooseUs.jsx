@@ -1,5 +1,5 @@
 import { GiSoundWaves } from "react-icons/gi";
-import { MdRecordVoiceOver } from "react-icons/md";
+import { MdHearing, MdRecordVoiceOver } from "react-icons/md";
 import { FaUserMd } from "react-icons/fa";
 
 const features = [
@@ -8,7 +8,7 @@ const features = [
     title: "Advanced Hearing Tests",
   },
   {
-    icon: <GiSoundWaves size={40} className="why-choose-us-icon" />,
+    icon: <MdHearing size={40} className="why-choose-us-icon" />,
     title: "Digital Hearing Aids",
   },
   {
