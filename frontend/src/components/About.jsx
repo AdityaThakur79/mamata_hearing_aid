@@ -1,5 +1,6 @@
 import React from "react";
 import { assets } from "../assets/assets";
+import { Link } from "react-router-dom";
  
 
 const About1 = () => {
@@ -630,12 +631,12 @@ const About1 = () => {
                   lasting relationships with our patients and their families,
                   ensuring continuity of care for generations.
                 </p>
-                <a
+                <Link to ="/contact"
                   href="javascript:void(0)"
                   className="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border border-transparent rounded-md px-7 bg-[#043152] hover:bg-opacity-90"
                 >
                   Contact Us
-                </a>
+                </Link>
               </div>
             </div>
           </div>

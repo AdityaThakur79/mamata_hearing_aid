@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { assets } from "../assets/assets";
 import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -214,8 +215,10 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-800">
+                    <Link to="https://maps.app.goo.gl/ihQfDyTZDf6WwPjG7" target="_blank">
                     shop no.146,Build No.P02,1st Floor,Harmony Plaza,Opposite
                     SBI Bank,Boisar-Tarapur Road,Boisar - 401501
+                    </Link>
                   </h3>
                 </div>
               </div>

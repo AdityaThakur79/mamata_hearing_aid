@@ -20,7 +20,7 @@ const Banner = () => {
 
         <button
           onClick={() => {
-            navigate("/login");
+            navigate("/doctors");
             scrollTo(0, 0);
           }}
           className="bg-white text-sm sm:text-base text-[#595959] px-8 py-3 rounded-full mt-6 hover:scale-105 transition-all "
