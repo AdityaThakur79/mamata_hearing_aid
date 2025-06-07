@@ -6,8 +6,8 @@ export const AdminAppContext = createContext()
 const AdminAppContextProvider = (props) => {
 
     const currency =  "INR"
-    // const backendUrl = "https://mamata-hearing-aid.onrender.com"
-    const backendUrl = "http://localhost:8080"
+    const backendUrl = "https://mamata-hearing-aid.onrender.com"
+    // const backendUrl = "http://localhost:8080"
 
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
