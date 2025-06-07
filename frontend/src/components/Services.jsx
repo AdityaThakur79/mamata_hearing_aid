@@ -7,7 +7,7 @@ const servicesData = [
     title: "Hearing Tests (Audiometry - PTA)",
     description:
       "Comprehensive hearing assessments using audiometry (PTA) to accurately diagnose hearing conditions in all age groups.",
-    image: assets.service_1,
+    image: assets.audiologist,
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const servicesData = [
     title: "Hearing Aid Batteries",
     description:
       "Reliable and long-lasting hearing aid batteries suitable for all major hearing aid models.",
-    image: assets.service_9,
+    image: assets.battery,
   },
   {
     id: 6,
@@ -101,12 +101,12 @@ const servicesData = [
     image: assets.service_5,
   },
   {
-  id: 15,
-  title: "Custom Ear Molds & Ear Plugs",
-  description:
-    "High-quality custom ear molds and plugs for hearing aids, swimmers, musicians, and noise protection tailored to your ear shape.",
-  image: assets.service_10,
-}
+    id: 15,
+    title: "Custom Ear Molds & Ear Plugs",
+    description:
+      "High-quality custom ear molds and plugs for hearing aids, swimmers, musicians, and noise protection tailored to your ear shape.",
+    image: assets.service_10,
+  },
 ];
 
 const Services = () => {
@@ -121,8 +121,8 @@ const Services = () => {
             Where compassionate care meets expert hearing solutions
           </h2>
           <h2 className="text-2xl  text-[#043152]  font-bold mt-2">
-            We provide a range of hearing services to
-            address your <span>unique</span> needs.
+            We provide a range of hearing services to address your{" "}
+            <span>unique</span> needs.
           </h2>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-10 service-cards">

@@ -7,7 +7,8 @@ export const DoctorContext = createContext()
 
 const DoctorContextProvider = (props) => {
 
-    const backendUrl = "https://mamata-hearing-aid.onrender.com"
+    // const backendUrl = "https://mamata-hearing-aid.onrender.com"
+     const backendUrl = "http://localhost:8080"
 
     const [dToken, setDToken] = useState(localStorage.getItem('dToken') ? localStorage.getItem('dToken') : '')
     const [appointments, setAppointments] = useState([])

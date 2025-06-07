@@ -54,8 +54,13 @@ import tick_icon from "./tick_icon.svg";
 import appointments_icon from "./appointments_icon.svg";
 import earning_icon from "./earning_icon.svg";
 import patients_icon from "./patients_icon.svg";
+import test from "./Test.png"
+import battery from "./battery.jpg"
+import audiologist from "./audiologist-test.jpg"
 
 export const assets = {
+  battery,
+  audiologist,
   appointment_img,
   header_img,
   group_profiles,
@@ -106,6 +111,7 @@ export const assets = {
   tick_icon,
   appointments_icon,
   earning_icon,
+  test
 };
 
 export const specialityData = [

@@ -7,7 +7,7 @@ const servicesData = [
     title: "Hearing Tests (Audiometry - PTA)",
     description:
       "Comprehensive hearing assessments using audiometry (PTA) to accurately diagnose hearing conditions in all age groups.",
-    image: assets.service_1,
+    image: assets.audiologist,
   },
   {
     id: 2,
@@ -35,7 +35,7 @@ const servicesData = [
     title: "Hearing Aid Batteries",
     description:
       "Reliable and long-lasting hearing aid batteries suitable for all major hearing aid models.",
-    image: assets.service_9,
+    image: assets.battery,
   },
   {
     id: 6,

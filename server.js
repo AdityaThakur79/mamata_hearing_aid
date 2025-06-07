@@ -8,6 +8,7 @@ import doctorRouter from "./routes/doctorRoute.js";
 import adminRouter from "./routes/adminRoute.js";
 import path from "path";
 import { fileURLToPath } from "url";
+import "./utils/appointmentReminder.js";
 
 // app config
 const app = express();
@@ -19,7 +20,11 @@ connectCloudinary();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://mamatahearingaid.in","https://www.mamatahearingaid.in"],
+    origin: [
+      "http://localhost:5173",
+      "https://mamatahearingaid.in",
+      "https://www.mamatahearingaid.in",
+    ],
     credentials: true,
   })
 );

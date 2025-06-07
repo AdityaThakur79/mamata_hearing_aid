@@ -23,7 +23,7 @@ const TopDoctors = () => {
 
         {/* Doctor Card */}
         <div className="w-full flex justify-center mt-10">
-          {doctors.length === 1 ? (
+          {doctors.length > 0 ? (
             <div
               onClick={() => {
                 navigate(`/appointment/${doctors[0]._id}`);
@@ -33,8 +33,8 @@ const TopDoctors = () => {
             >
               <img
                 className="bg-[#EAEFFF] w-full  object-cover"
-                src={doctors[0].image}
-                alt={doctors[0].name}
+                src={doctors[0]?.image}
+                alt={doctors[0]?.name}
               />
               <div className="p-4 text-left">
                 <div
@@ -50,10 +50,10 @@ const TopDoctors = () => {
                   <p>{doctors[0].available ? "Available" : "Not Available"}</p>
                 </div>
                 <p className="text-[#262626] text-lg font-semibold">
-                  {doctors[0].name}
+                  {doctors[0]?.name}
                 </p>
                 <p className="text-[#5C5C5C] text-sm">
-                  {doctors[0].speciality}
+                  {doctors[0]?.speciality}
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ const TopDoctors = () => {
           }}
           className="bg-[#EAEFFF] text-gray-600 px-12 py-3 rounded-full mt-10 hover:bg-[#d8e4ff]"
         >
-         Book an Appointment
+          Book an Appointment
         </button>
       </div>
     </section>

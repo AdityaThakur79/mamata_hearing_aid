@@ -12,7 +12,8 @@ const DoctorAppointments = () => {
     cancelAppointment,
     completeAppointment,
   } = useContext(DoctorContext);
-  const { slotDateFormat, calculateAge, currency } = useContext(AdminAppContext);
+  const { slotDateFormat, calculateAge, currency } =
+    useContext(AdminAppContext);
 
   useEffect(() => {
     if (dToken) {
@@ -42,11 +43,6 @@ const DoctorAppointments = () => {
             >
               <p className="max-sm:hidden">{index}</p>
               <div className="flex items-center gap-2">
-                <img
-                  src={item.userData.image}
-                  className="w-8 rounded-full"
-                  alt=""
-                />{" "}
                 <p>{item.userData.name}</p>
               </div>
               <div>
@@ -54,7 +50,7 @@ const DoctorAppointments = () => {
                   {item.payment ? "Online" : "CASH"}
                 </p>
               </div>
-              <p className="max-sm:hidden">{calculateAge(item.userData.dob)}</p>
+              <p className="max-sm:hidden">{item.userData.age}</p>
               <p>
                 {slotDateFormat(item.slotDate)}, {item.slotTime}
               </p>
